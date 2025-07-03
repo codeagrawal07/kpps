@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Paradise Sr. Sec. School - Where Learning Meets Fun!</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: white;
+        }
+        
+        .feature-box {
+            width: 250px;
+            text-align: center;
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .social-icons {
+            margin: 1rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        #heading{
+            -webkit-text-stroke: 3px yellow;
+            font-size: 50px;
+        }
+
+        /* New Event Cards Styles */
+        .events-container {
+            padding: 2rem;
+            background-color: var(--secondary);
+            text-align: center;
+            color: white;
+        }
+
+        .events-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            width: 280px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            color: var(--dark);
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .event-date {
+            background-color:#da2852;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .event-content {
+            padding: 15px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .countdown span {
+            font-size: 0.8rem;
+            color:rgb(255, 255, 255);
+            
+        }
+
+        .countdown div {
+            background:#da2852;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            min-width: 40px;
+        }
+
+        .event-btn {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <img src="/image/logo.png" alt="Kids Paradise Logo" class="logo" style="height: 120px; margin-left:0%">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 id="heading">Kids Paradise Sr. Sec. School</h1>
+            <p>Where Learning Meets Fun!</p>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Kids Paradise</h2>
+            <p>A place where curiosity is nurtured, creativity is celebrated, and character is built</p>
+            <!-- <a href="virtual-tour.html" class="btn">Take a Virtual Tour</a> -->
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature-box">
+            <div class="feature-icon">📚</div>
+            <h3>Quality Education</h3>
+            <p>CBSE-affiliated curriculum with innovative teaching methods</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">🎨</div>
+            <h3>Creative Learning</h3>
+            <p>Arts, music, dance, and drama integrated into our program</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">⚽</div>
+            <h3>Sports Excellence</h3>
+            <p>State-of-the-art sports facilities and coaching</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">🌱</div>
+            <h3>Green Campus</h3>
+            <p>Eco-friendly environment with lush gardens</p>
+        </div>
+    </section>
+    
+    <!-- Updated Events Section (Option 1) -->
+    <section class="events-container">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid" id="events-grid">
+            <!-- Events will be loaded dynamically from JSON -->
+        </div>
+        <!-- <a href="events.html" class="btn">View All Events</a> -->
+    </section>
+    
+    <section style="padding: 2rem; text-align: center;">
+        <h2>What Parents Say</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div style="margin: 1rem; padding: 1rem; border: 2px dashed var(--primary); border-radius: 10px; width: 300px;">
+                <p>"Kids Paradise has transformed my child into a confident learner. The teachers are truly dedicated!"</p>
+                <p>- Mrs. Sharma, Parent</p>
+            </div>
+            <div style="margin: 1rem; padding: 1rem; border: 2px dashed var(--primary); border-radius: 10px; width: 300px;">
+                <p>"The balance between academics and extracurricular activities is perfect. My son loves going to school!"</p>
+                <p>- Mr. Patel, Parent</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>Kids Paradise Sr. Sec. School</p>
+        <p>123 Education Lane, Knowledge City, 123456</p>
+        <p>Phone: +91 1234567890 | Email: info@kidsparadise.edu</p>
+        <p>© 2024 Kids Paradise Sr. Sec. School. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript for Dynamic Events -->
+   <script>
+    // Function to format date
+    function formatDate(dateString) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date(dateString).toLocaleDateString('en-US', options);
+    }
+
+    // Function to calculate days until event
+    function getDaysUntil(eventDate) {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Normalize to midnight for accurate day count
+        const event = new Date(eventDate);
+        const diffTime = event - today;
+        return Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+    }
+
+    // Load events from JSON file
+    document.addEventListener('DOMContentLoaded', async function() {
+        const eventsGrid = document.getElementById('events-grid');
+        
+        try {
+            // Show loading state
+            eventsGrid.innerHTML = '<p>Loading events...</p>';
+            
+            const response = await fetch('events.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const events = await response.json();
+            eventsGrid.innerHTML = ''; // Clear loading state
+            
+            // Filter and sort events (nearest first)
+            const upcomingEvents = events
+                .filter(event => {
+                    const eventDate = new Date(event.date);
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+                    return eventDate >= today;
+                })
+                .sort((a, b) => new Date(a.date) - new Date(b.date));
+            
+            if (upcomingEvents.length === 0) {
+                eventsGrid.innerHTML = '<p>No upcoming events at this time.</p>';
+                return;
+            }
+            
+            upcomingEvents.forEach(event => {
+                const daysUntil = getDaysUntil(event.date);
+                
+                eventsGrid.innerHTML += `
+                    <div class="event-card">
+                        <div class="event-date">
+                            ${formatDate(event.date)}
+                        </div>
+                      
+                        <div class="event-content">
+                            <h3>${event.title}</h3>
+                            <p><i class="fas fa-clock"></i> ${event.time}</p>
+                            <p><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
+                            <p>${event.description}</p>
+                            ${daysUntil > 0 ? `
+                            <div class="countdown">
+                                <div><span>${daysUntil}</span> Days</div>
+                            </div>
+                            ` : '<p style="color:#da2852; font-weight: bold;">Happening Today!</p>'}
+                        </div>
+                    </div>
+                `;
+            });
+        } catch (error) {
+            console.error('Error loading events:', error);
+            eventsGrid.innerHTML = `
+                <p>Events could not be loaded. Please check back later.</p>
+                <p><small>${error.message}</small></p>
+            `;
+        }
+    });
+</script>
+</body>
+</html>

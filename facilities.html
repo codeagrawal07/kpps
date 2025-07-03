@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Kids Paradise Sr. Sec. School</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+      
+        .facilities-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        
+        .facilities-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .facilities-header h1 {
+            color:#da2852;;
+            font-size: 2.5rem;
+        }
+        
+        .facility-card {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .facility-img {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .facility-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .facility-img:hover img {
+            transform: scale(1.1);
+        }
+        
+        .facility-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+        }
+        
+        .facility-content h2 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .facility-features {
+            margin: 1rem 0;
+        }
+        
+        .facility-features li {
+            margin-bottom: 0.5rem;
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .facility-features li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .facility-highlight {
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <img src="/image/logo.png" alt="Kids Paradise Logo" class="logo" style="height: 120px; margin-left:0%">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 id="heading">Kids Paradise Sr. Sec. School</h1>
+            <p>Where Learning Meets Fun!</p>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html" style="background-color: var(--accent); color: var(--dark);">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="facilities-container">
+        <div class="facilities-header">
+            <h1>Our World-Class Facilities</h1>
+            <p>We provide an enriching environment that supports holistic development</p>
+        </div>
+        
+        <div class="facility-card">
+            <div class="facility-img">
+                <img src="image\facilities_imgage\smart-classroom.jpg" alt="Smart Classrooms">
+            </div>
+            <div class="facility-content">
+                <h2><i class="fas fa-chalkboard-teacher"></i> Smart Lab</h2>
+                <p>Our digitally equipped classrooms make learning interactive and engaging with:</p>
+                <ul class="facility-features">
+                    <li>Interactive whiteboards and projectors</li>
+                    <li>Digital learning resources</li>
+                    <li>comfortable spaces</li>
+                    <li>Child-friendly furniture</li>
+                </ul>
+                <div class="facility-highlight">Capacity: 80 students </div>
+            </div>
+        </div>
+        
+        <div class="facility-card">
+            <div class="facility-img">
+                <img src="image\facilities_imgage\science-lab9.jpg" alt="Science Labs">
+            </div>
+            <div class="facility-content">
+                <h2><i class="fas fa-flask"></i> Science & Computer Labs</h2>
+                <p>State-of-the-art laboratories that foster scientific curiosity:</p>
+                <ul class="facility-features">
+                    <li>Fully equipped physics, chemistry, and biology labs</li>
+                    <li>Computer lab with latest technology</li>
+                    <li>Robotics and STEM learning center</li>
+                    <li>Supervised by expert faculty</li>
+                </ul>
+                <div class="facility-highlight">Safety First: All labs have safety protocols</div>
+            </div>
+        </div>
+        
+        <div class="facility-card">
+            <div class="facility-img">
+                <img src="image\facilities_imgage\library1 (1).jpg" alt="School Library">
+            </div>
+            <div class="facility-content">
+                <h2><i class="fas fa-book-open"></i> Knowledge Resource Center</h2>
+                <p>Our vibrant library promotes reading and research:</p>
+                <ul class="facility-features">
+                    <li>15,000+ books across genres</li>
+                    <li>Digital reading corner with tablets</li>
+                    <li>Comfortable reading spaces</li>
+                    <li>Regular storytelling sessions</li>
+                </ul>
+                <div class="facility-highlight">Open Weekdays: 8 AM - 4 PM</div>
+            </div>
+        </div>
+        
+        <div class="facility-card">
+            <div class="facility-img">
+                <img src="image\facilities_imgage\female-coach-in-water-giving-group-of-children-swimming-lesson-in-indoor-pool.jpg" alt="Sports Facilities">
+            </div>
+            <div class="facility-content">
+                <h2><i class="fas fa-running"></i> Sports Complex</h2>
+                <p>Comprehensive sports facilities for physical development:</p>
+                <ul class="facility-features">
+                    <li>Indoor basketball court</li>
+                    <li>Swimming pool (with lifeguard)</li>
+                    <li>Cricket pitch and football field</li>
+                    <li>Table tennis, badminton, and chess</li>
+                    <li>Yoga and aerobics studio</li>
+                </ul>
+                <div class="facility-highlight">Coaching by professional trainers</div>
+            </div>
+        </div>   
+        
+        <div class="facility-card">
+            <div class="facility-img">
+                <img src="image\facilities_imgage\DSC02565-1024x683.jpg" alt="School Transport">
+            </div>
+            <div class="facility-content">
+                <h2><i class="fas fa-bus"></i> Transport Services</h2>
+                <p>Safe and reliable transportation:</p>
+                <ul class="facility-features">
+                    <li>GPS-enabled buses</li>
+                    <li>Female attendants on each bus</li>
+                    <li>Covering all major routes</li>
+                    <li>Regular vehicle maintenance</li>
+                </ul>
+                <div class="facility-highlight">Safety First: CCTV and speed governors</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Kids Paradise Sr. Sec. School</p>
+        <p>© 2024 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Annual Sports Day",
+    "date": "2026-03-15",
+    "time": "9:00 AM - 2:00 PM",
+    "location": "School Ground",
+    "description": "Inter-house competitions with track & field events"
+  },
+  {
+    "id": 2,
+    "title": "Science Fair",
+    "date": "2026-04-05",
+    "time": "10:00 AM - 4:00 PM",
+    "location": "School Auditorium",
+    "description": "Student projects exhibition open to parents"
+  }
+]

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kids Paradise Sr. Sec. School</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+      
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 1rem;
+        }
+        
+        .contact-info h2 {
+            color:#da2852;
+            border-bottom: 2px dashed var(--accent);
+            padding-bottom: 10px;
+        }
+        
+        .contact-info p {
+            margin: 1rem 0;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #0800e1;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 1rem;
+        }
+        
+        .contact-form h2 {
+            color:#da2852;
+            border-bottom: 2px dashed var(--accent);
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+        }
+        
+        .submit-btn {
+            background-color: var(--accent);
+            color: var(--dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: scale(1.05);
+            background-color: #FFD700;
+        }
+        
+        .map-container {
+            width: 100%;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .social-icons {
+            margin: 1rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <img src="/image/logo.png" alt="Kids Paradise Logo" class="logo" style="height: 120px; margin-left:0%">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 id="heading">Kids Paradise Sr. Sec. School</h1>
+            <p>Where Learning Meets Fun!</p>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="background-color: var(--accent); color: var(--dark);">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>📞 Get in Touch</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Education Lane, Knowledge City, 123456</p>
+            <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 1234567890</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@kidsparadise.edu</p>
+            <p><i class="fas fa-clock"></i> <strong>Office Hours:</strong> 8:00 AM - 4:00 PM (Mon-Sat)</p>
+            
+            <h3>📢 Departments</h3>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Admissions:</strong> admissions@kidsparadise.edu</p>
+            <p><i class="fas fa-bus"></i> <strong>Transport:</strong> transport@kidsparadise.edu</p>
+           
+            <h3>🔗 Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>📩 Send Us a Message</h2>
+            <form action="submit-form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="admission">Admission Inquiry</option>
+                        <option value="feedback">Feedback/Suggestion</option>
+                        <option value="transport">Transport Query</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="map-container">
+        <h2>📍 Find Us on the Map</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.701560117783!2d79.33998637497261!3d29.055407064752913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a7f0d75444b1b%3A0xf450f651bcb71718!2sKids%20Paradise%20Sr.Sec%20School!5e0!3m2!1sen!2sin!4v1748162402649!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <footer>
+        <p>Kids Paradise Sr. Sec. School</p>
+        <p>© 2025 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

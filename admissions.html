@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Kids Paradise Sr. Sec. School</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        
+        .admission-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        
+        .admission-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .admission-header h1 {
+            color:#da2852;
+            font-size: 2.5rem;
+        }
+        
+        .admission-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        
+        .step {
+            flex: 0 0 30%;
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .step-number {
+            background-color: var(--accent);
+            color: var(--dark);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .fee-structure {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .download-section {
+            background-color: rgb(255, 255, 255);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color:#da2852;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+   
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <img src="/image/logo.png" alt="Kids Paradise Logo" class="logo" style="height: 120px; margin-left:0%">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 id="heading">Kids Paradise Sr. Sec. School</h1>
+            <p>Where Learning Meets Fun!</p>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html" style="background-color: var(--accent); color: var(--dark);">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="admission-container">
+        <div class="admission-header">
+            <h1>Admission Process</h1>
+            <p>Join our family of curious learners and creative thinkers!</p>
+        </div>
+        
+        <div class="admission-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Inquiry</h3>
+                <p>Visit our school or fill out the online inquiry form to begin the admission process.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>School Tour</h3>
+                <p>Schedule a campus tour to see our facilities and meet our faculty.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Application</h3>
+                <p>Submit the completed application form along with required documents.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Assessment</h3>
+                <p>Students may be required to take an assessment test (for certain grades).</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Interview</h3>
+                <p>Parents and student meet with the admission committee.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">6</div>
+                <h3>Confirmation</h3>
+                <p>Receive admission decision and complete enrollment formalities.</p>
+            </div>
+        </div>
+        
+        <div class="fee-structure">
+            <h2><i class="fas fa-rupee-sign"></i> Fee Structure (2024-25)</h2>
+            <table>
+                <tr>
+                    <th>Grade</th>
+                    <th>Annual Tuition Fee</th>
+                    <th>Admission Fee</th>
+                    <th>Other Charges</th>
+                </tr>
+                <tr>
+                    <td>Nursery - KG</td>
+                    <td>₹45,000</td>
+                    <td>₹5,000</td>
+                    <td>₹3,000</td>
+                </tr>
+                <tr>
+                    <td>Class 1-5</td>
+                    <td>₹55,000</td>
+                    <td>₹5,000</td>
+                    <td>₹4,000</td>
+                </tr>
+                <tr>
+                    <td>Class 6-8</td>
+                    <td>₹65,000</td>
+                    <td>₹5,000</td>
+                    <td>₹5,000</td>
+                </tr>
+                <tr>
+                    <td>Class 9-12</td>
+                    <td>₹75,000</td>
+                    <td>₹5,000</td>
+                    <td>₹6,000</td>
+                </tr>
+            </table>
+            <p style="margin-top: 1rem;"><em>*Transportation and meal plans available at additional cost</em></p>
+        </div>
+        
+        <div class="download-section">
+            <h2><i class="fas fa-download"></i> Download Forms</h2>
+            <a href="image\logo.png" download="" class="download-btn"><i class="fas fa-file-pdf"></i> Admission Form</a>
+            <a href="#" class="download-btn"><i class="fas fa-file-pdf"></i> Fee Structure</a>
+            <a href="#" class="download-btn"><i class="fas fa-file-pdf"></i> School Calendar</a>
+            
+            <div style="margin-top: 2rem;">
+                <a href="online-application.html" class="download-btn" style="background-color: var(--secondary);">
+                    <i class="fas fa-laptop"></i> Apply Online
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Kids Paradise Sr. Sec. School</p>
+        <p>© 2024 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

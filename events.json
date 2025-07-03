@@ -14,5 +14,13 @@
     "time": "10:00 AM - 4:00 PM",
     "location": "School Auditorium",
     "description": "Student projects exhibition open to parents"
+  },
+  {
+    "id": 2,
+    "title": "Science Fair",
+    "date": "2026-04-05",
+    "time": "10:00 AM - 4:00 PM",
+    "location": "School Auditorium",
+    "description": "Student projects exhibition open to parents"
   }
 ]
